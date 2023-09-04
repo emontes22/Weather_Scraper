@@ -48,32 +48,9 @@ class WeatherScraper:
         # Extract current weather information
         self.extract_weather_data(soup)
 
-    def display_data(self):
-        # Display news data
-        for item in self.news_data:
-            print("Section Title:", item['section_title'])
-            print("Category:", item['category'])
-            print("Article Title:", item['article_title'])
-            print("Time:", item['time'])
-            print("Link:", item['link'])
-            print()
-        
-        # Display weather data
-        for key, value in self.weather_data.items():
-            if isinstance(value, str):
-                # Remove extra spaces with .strip() for string values
-                print(key + ":", value.strip())
-            else:
-                # No need to strip non-string values
-                print(key + ":", value)
-
 def main():
     url = 'https://www.accuweather.com/en/us/el-paso/79901/weather-forecast/351195'
-    user_agent = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36'
+    user_agent = 'Your_user_agent'
     
     scraper = WeatherScraper(url, user_agent)
     scraper.fetch_data()
-    scraper.display_data()
-
-if __name__ == "__main__":
-    main()
