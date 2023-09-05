@@ -25,7 +25,7 @@ Before you begin, ensure you have met the following requirements:
 2. Nagivate to the project directory.
 3. Configure the script:
     - Open `scraper.py` and replace `'Your_user_agent'` with your actual user agent. ([Google user agent](https://www.google.com/search?q=what+is+my+user+agent&oq=what+is+my+user+agent&aqs=chrome..69i57.2459j0j1&sourceid=chrome&ie=UTF-8))
-    - Open `tele_bot.py` and replace `'Your_TOKEN_API'` and `'Your_ID'` with your Telegram bot token and chat ID. ([Instructions to create a telegram bot](https://www.google.com/search?q=what+is+my+user+agent&oq=what+is+my+user+agent&aqs=chrome..69i57.2459j0j1&sourceid=chrome&ie=UTF-8))
+    - Open `tele_bot.py` and replace `'Your_TOKEN_API'` and `'Your_ID'` with your Telegram bot token and chat ID. ([Instructions to create a telegram bot](https://www.google.com/search?q=what+is+my+user+agent&oq=what+is+my+user+agent))
 4. Run the script. (`'python tele_bot.py'` or '`python3 tele_bot.py'`)
 5. The script will scrape the data and send it to your Telegram bot.
 
